@@ -69,6 +69,7 @@ body{
 .resultado{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 50px;
 }
 
@@ -84,4 +85,11 @@ input{
     background-color: var(--cinza);
     border: 1px dashed var(--roxo);
     border-radius: 5px;
+}
+
+@media (max-width: 800px) {
+    .resultado{
+        flex-direction: column;
+        gap: 5px;
+    }
 }
