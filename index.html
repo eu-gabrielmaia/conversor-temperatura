@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imgs/Temperatura.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <title>TempConvert</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">TempConvert</h1>
+        <p class="descricao">O TempConvert é um sistema de conversão de temperatura que permite aos usuários converter valores de temperatura de acordo com a escala fornecida. O sistema recebe uma temperatura em graus Celsius e converte para Fahrenheit, Kelvin e outras escalas de temperatura conforme necessário. Ele é projetado para ser intuitivo, eficiente e acessível, proporcionando resultados rápidos e precisos para diversas aplicações acadêmicas, científicas e cotidianas.</p>
+    </header>
+    <hr>
+
+    <main class="principal">
+        <div class="temperatura">
+            <div class="input">
+                <label class="legenda" for="tempC">Digite a temperatura em Celsius</label> <br>
+                <input name="tempC" id="tempC" class="temps" type="number">
+            </div>
+            <button class="botao">Calcular</button>
+        </div>
+
+
+        <div class="resultado">
+            <div class="resultado-item">
+                <label class="legenda" for="tempF">Temperatura em Fahrenheit (F°)</label> <br>
+                <input name="tempF" id="tempF" class="temps tempsResultado" type="number" readonly>
+            </div>
+            <div class="resultado-item">
+                <label class="legenda" for="tempK">Temperatura em Kelvin (K°)</label> <br>
+                <input name="tempK" id="tempK" class="temps tempsResultado" type="number" readonly>
+            </div>
+        </div>
+
+        <p></p>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
